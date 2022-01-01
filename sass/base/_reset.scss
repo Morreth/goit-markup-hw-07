@@ -1,24 +1,33 @@
-p, h1, h2, h3, h4, h5, h6 {margin: 0;}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
-ul {margin: 0;
-padding: 0;}
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 img {
-    display: block;
+  display: block;
 }
 
-body  {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
