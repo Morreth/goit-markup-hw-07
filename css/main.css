@@ -14,6 +14,15 @@
   --motto-background-color: rgba(47, 48, 58, 0.4);
 }
 
+.works-button-list, .works-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-item, .works-item-text {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -839,21 +848,14 @@ img {
 }
 
 .works-button-list {
-  display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.works-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .works-item {
   max-width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works-item:nth-child(3n) {
@@ -891,7 +893,6 @@ img {
   overflow: auto;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms linear;
 }
 
 .works-card {
