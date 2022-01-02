@@ -5,7 +5,7 @@
 }
 
 .footer-container {
-  @extend %align-list;
+  display: flex;
 }
 
 .footer-logo {
@@ -54,7 +54,7 @@
 }
 
 .footer-social-list {
-  @extend %align-list;
+  display: flex;
 }
 
 .footer-social-link {

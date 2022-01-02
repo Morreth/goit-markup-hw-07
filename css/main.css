@@ -14,7 +14,7 @@
   --motto-background-color: rgba(47, 48, 58, 0.4);
 }
 
-.contacts-list, .header-container, .header-mail, .hero-list, .hero-box, .whaddowedo-list, .whaddowedo-box, .team-list, .team-social-list, .team-social-link, .clients-list, .clients-link, .footer-container, .footer-social-list, .footer-social-link, .subscribe-input, .subscribe-btn, .modal-close, .policy-item, .works-button-list, .works-list {
+.contacts-list, .header-container, .header-mail, .hero-list, .hero-box, .whaddowedo-list, .whaddowedo-box, .team-list, .team-social-list, .team-social-link, .clients-list, .clients-link, .footer-social-link, .subscribe-input, .subscribe-btn, .modal-close, .policy-item, .works-button-list, .works-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -468,6 +468,10 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+}
+
 .footer-logo {
   margin-bottom: 20px;
   color: var(--logo-color);
@@ -508,6 +512,10 @@ img {
 
 .footer-social {
   margin-left: 70px;
+}
+
+.footer-social-list {
+  display: flex;
 }
 
 .footer-social-link {
