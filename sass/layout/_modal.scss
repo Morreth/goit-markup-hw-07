@@ -38,9 +38,8 @@
   position: absolute;
   top: 14px;
   right: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
+  @extend %content-center;
   cursor: pointer;
   &:hover {
     color: var(--accent-color);
@@ -140,9 +139,8 @@
   border-radius: 2px;
   margin-right: 5px;
   margin-left: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
+  @extend %content-center;
 }
 
 .input-icon {
