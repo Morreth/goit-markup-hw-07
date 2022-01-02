@@ -33,7 +33,13 @@
   pointer-events: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -47,8 +53,8 @@ img {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .list {
@@ -80,6 +86,34 @@ body {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+}
+
+.works-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.works-button {
+  height: 38px;
+  background: var(--portfolio-button-color);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  margin-left: 8px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works-button:hover, .works-button:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .header {
@@ -330,7 +364,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .team {
@@ -407,7 +441,7 @@ img {
 }
 
 .team-social-link {
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .team-social-link:hover, .team-social-link:focus {
@@ -443,11 +477,17 @@ img {
 .clients-link .clients-icon {
   width: 106px;
   height: 60px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   display: block;
   margin-left: auto;
   margin-right: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works-button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .footer {
@@ -608,7 +648,7 @@ img {
 .modal {
   width: 528px;
   height: 581px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
@@ -703,7 +743,7 @@ img {
   font-family: Roboto;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1,16;
+  line-height: 1, 16;
   letter-spacing: 0.01em;
   color: var(--header-text-color);
 }
@@ -716,7 +756,7 @@ img {
   font-family: Roboto;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1,16;
+  line-height: 1, 16;
   letter-spacing: 0.01em;
   color: var(--header-text-color);
 }
@@ -757,7 +797,7 @@ img {
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1,71;
+  line-height: 1, 71;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
@@ -800,33 +840,46 @@ img {
   border-radius: 4px;
 }
 
-.works-button .works-button-list {
+.works-button-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.works-button .works-list {
+.works-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.works-button .works-item {
+.works-item {
   max-width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works-button .works-item:hover .works-item-text {
+.works-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.works-item:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+
+.works-item:hover .works-item-text {
   transform: translateY(0);
+}
+
+.works-item:hover, .works-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works-button .works-wrap {
+.works-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.works-button .works-item-text {
+.works-item-text {
   max-width: 370px;
   position: absolute;
   top: 0;
@@ -843,28 +896,15 @@ img {
   transition: transform 250ms linear;
 }
 
-.works-button .works-card {
+.works-card {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
-.works-button .works-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.works-button .works-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.works-button .works-item:nth-child(n+7) {
-  margin-bottom: 0px;
-}
-
-.works-button .works-title {
+.works-title {
   font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
@@ -873,7 +913,7 @@ img {
   margin-bottom: 4px;
 }
 
-.works-button .works-text {
+.works-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
