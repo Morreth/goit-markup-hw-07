@@ -51,12 +51,8 @@
 }
 
 .modal-title {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 700, 1.15, 00.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-title-color);
   margin-bottom: 12px;
 }
@@ -104,12 +100,8 @@
   outline: none;
   margin-top: 4px;
   margin-bottom: 5px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1, 16;
-  letter-spacing: 0.01em;
+  @extend %transit;
+  @include font(12px, 400, 1.16, 00.01em);
   color: var(--header-text-color);
   &:focus {
     border-color: var(--accent-color);
@@ -117,11 +109,7 @@
 }
 
 .modal-label-text {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1, 16;
-  letter-spacing: 0.01em;
+  @include font(12px, 400, 1.16, 00.01em);
   color: var(--header-text-color);
 }
 
@@ -157,11 +145,7 @@
 
 .policy-text {
   display: flex;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1, 71;
-  letter-spacing: 0.03em;
+  @include font(14px, 400, 1.71, 00.03em);
   color: #757575;
   margin-bottom: 30px;
 }

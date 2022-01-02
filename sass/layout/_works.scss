@@ -5,10 +5,7 @@
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font(16px, 500, 1.62, 00.03em);
   text-align: center;
   border-radius: 4px;
   margin-left: 8px;
@@ -25,13 +22,13 @@
 }
 
 .works-button-list {
-@extend %align-list;
+  @extend %align-list;
   justify-content: center;
   margin-bottom: 50px;
 }
 
 .works-list {
-    @extend %align-list;
+  @extend %align-list;
 }
 
 .works-item {
@@ -73,7 +70,7 @@
   overflow: auto;
   height: 100%;
   transform: translateY(100%);
-  @extend %transit
+  @extend %transit;
 }
 
 .works-card {
@@ -85,17 +82,11 @@
 }
 
 .works-title {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 700, 2, 00.06em);
   margin-bottom: 4px;
 }
 
 .works-text {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+  @include font(16px, 400, 1.87, 00.03em);
   color: var(--header-text-color);
 }

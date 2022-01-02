@@ -24,11 +24,8 @@
 }
 
 .footer-address {
+  @include font($fs: 14px, $fw: 400, $lh: 1.71, $ls: 00.03em);
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--main-title-color);
   margin-bottom: 9px;
   @extend %transit;
@@ -39,11 +36,8 @@
 }
 
 .title-five {
+  @include font($fs: 14px, $fw: 500, $lh: 1.71, $ls: 00.03em);
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   margin-bottom: 20px;
   color: var(--main-title-color);
   text-transform: uppercase;
@@ -97,21 +91,13 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include font($fs: 16px, $fw: 400, $lh: 1.25, $ls: 00.03em);
   color: var(--second-text-color);
   margin-right: 12px;
 }
 
 .subscribe-input::placeholder {
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include font($fs: 16px, $fw: 400, $lh: 1.25, $ls: 00.03em);
   color: var(--second-text-color);
 }
 
@@ -120,11 +106,7 @@
   height: 50px;
   @extend %align-list;
   @extend %content-center;
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  @include font(16px, 700, 1.87, 00.06em);
   color: var(--main-title-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
