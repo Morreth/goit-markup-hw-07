@@ -35,14 +35,6 @@
   }
 }
 
-.title-five {
-  @include font($fs: 14px, $fw: 500, $lh: 1.71, $ls: 00.03em);
-  font-style: normal;
-  margin-bottom: 20px;
-  color: var(--main-title-color);
-  text-transform: uppercase;
-}
-
 .footer-social {
   margin-left: 70px;
 }

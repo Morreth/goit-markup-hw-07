@@ -11,15 +11,7 @@
   padding-bottom: 200px;
 }
 
-.title-one {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-title-color);
-}
+
 
 .motto-container {
   padding-right: 252px;
@@ -64,13 +56,6 @@
   @extend %content-center;
 }
 
-.title-three {
-  @include font(14px, 700, 1.14, 00.03em);
-  margin-top: 30px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: var(--second-title-color);
-}
 
 .hero-text {
   @include font(14px, 400, 1.7, 00.03em);
@@ -82,12 +67,7 @@
   max-height: 70px;
 }
 
-.title-two {
-  @include font(36px, 700, 1.16, 00.03em);
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--second-title-color);
-}
+
 
 .whaddowedo-list {
   @extend %align-list;
