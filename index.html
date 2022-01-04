@@ -19,24 +19,28 @@
         <div class="container header-container">
           <nav class="header-navigation">
             <a class="link header-logo" href="http://WebStudio">Web<span class="logo-second-color">Studio</span> </a>
-            <ul class="list header-list">
-              <li class="header-item">
-                <a class="link header-link current" href="./index.html">Студия</a>
-              </li>
-              <li class="header-item">
-                <a class="link header-link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
-            </ul>
+                <ul class="list header-list">
+                    <li class="header-list__item">
+                        <a class="link header-list__link current" href="./index.html">Студия</a>
+                    </li>
+                    <li class="header-list__item">
+                        <a class="link header-list__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="header-list__item">
+                        <a class="link header-list__link" href="">Контакты</a>
+                    </li>
+                </ul>
           </nav>
           <ul class="list contacts-list">
-            <li class="header-contacts">
-              <a class="link header-mail" href="tel:info@devstudio.com">
-              <svg class="header-icon" width="16" height="12"> <use href="./images/icons.svg#icon-envelope">
-              </use></svg>info@devstudio.com</a></li>
-            <li class="header-contacts">
-              <a class="link header-mail" href="mailto:+380961111111">
-                <svg class="header-icon" width="10" height="16">
+            <li class="contacts-list__item">
+              <a class="link contacts-list__link" href="tel:info@devstudio.com">
+                <svg class="contacts-list__icon" width="16" height="12"> 
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="link contacts-list__link" href="mailto:+380961111111">
+                <svg class="contacts-list__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-mobilka"></use>
                 </svg> +380961111111</a></li>
           </ul>
@@ -44,56 +48,76 @@
       </header>
 
 <main class="main">
-<section class="section motto">
-    <div class="container motto-container">
+<section class="section motto__section">
+    <div class="container motto__container">
     <h1 class="title-one">Эффективные решения для вашего бизнеса</h1>
-    <button class="btn main-btn" type="button" data-modal-open>Заказать услугу</button>
+    <button class="btn motto__btn" type="button" data-modal-open>Заказать услугу</button>
     </div>
 </section>
 
-<section class="section hero">
-    <div class="container hero-container">
-    <ul class="list hero-list">
-        <li class="hero-item"><div class="hero-box"><svg class="hero-icon" width="65" height="70">
-            <use href="./images/icons.svg#icon-tarelka"></use>
-        </svg> </div><h3 class="title-three">Внимание к деталям</h3>
-            <p class="hero-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
-        <li class="hero-item"><div class="hero-box"><svg class="hero-icon" width="65" height="70">
-            <use href="./images/icons.svg#icon-clock-1"></use>
-        </svg> </div><h3 class="title-three">Пунктуальность</h3>
-            <p class="hero-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
-        <li class="hero-item"> <div class="hero-box"> <svg class="hero-icon" width="65" height="70">
-            <use href="./images/icons.svg#icon-diagram-1"></use>
-        </svg> </div> <h3 class="title-three">Планирование</h3>
-            <p class="hero-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
-        <li class="hero-item"> <div class="hero-box">  <svg class="hero-icon" width="65" height="70">
-            <use href="./images/icons.svg#icon-astronaut-1"></use>
-        </svg> </div><h3 class="title-three">Современные технологии</h3>
-            <p class="hero-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+<section class="section principles-section">
+    <div class="container principles-section__container">
+    <ul class="list principles-section__list">
+        <li class="principles-section__item">
+            <div class="principles-section__box">
+                <svg class="principles-section__icon" width="65" height="70">
+                    <use href="./images/icons.svg#icon-tarelka"></use>
+                </svg> 
+            </div>
+            <h3 class="title-three">Внимание к деталям</h3>
+            <p class="principles-section__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        </li>
+        <li class="principles-section__item">
+            <div class="principles-section__box">
+                <svg class="principles-section__icon" width="65" height="70">
+                    <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg> 
+            </div>
+            <h3 class="title-three">Пунктуальность</h3>
+            <p class="principles-section__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </li>
+        <li class="principles-section__item"> 
+            <div class="principles-section__box"> 
+                <svg class="principles-section__icon" width="65" height="70">
+                    <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg> 
+            </div> 
+            <h3 class="title-three">Планирование</h3>
+            <p class="principles-section__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        </li>
+        <li class="principles-section__item"> 
+            <div class="principles-section__box">  
+                <svg class="principles-section__icon" width="65" height="70">
+                    <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg> 
+            </div>
+            <h3 class="title-three">Современные технологии</h3>
+            <p class="principles-section__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        </li>
     </ul>
     </div>
 </section>
 
 <section class="section whaddowedo">
-    <div class="container whaddowedo-container">
+    <div class="container whaddowedo__container">
     <h2 class="title-two">Чем мы занимаемся</h2>
     <ul class="list whaddowedo-list">
-        <li class="whaddowedo-item">
+        <li class="whaddowedo-list__item">
             <img src="./images/ruki.jpg" alt="чем мы занимаемся" width="370" height="294">
-            <div class="whaddowedo-box">
-                <p class="whaddowedo-text">Десктопные приложения</p>
+            <div class="whaddowedo-list__box">
+                <p class="whaddowedo-list__text">Десктопные приложения</p>
             </div>
         </li>
-    <li class="whaddowedo-item">
+    <li class="whaddowedo-list__item">
         <img src="./images/mobila.jpg" alt="для мобильных устройств" width="370" height="294">
-        <div class="whaddowedo-box">
-            <p class="whaddowedo-text">Мобильные приложения</p>
+        <div class="whaddowedo-list__box">
+            <p class="whaddowedo-list__text">Мобильные приложения</p>
         </div>
     </li>
-    <li class="whaddowedo-item">
+    <li class="whaddowedo-list__item">
         <img src="./images/planshet.jpg" alt="для планшетов" width="370" height="294">
-        <div class="whaddowedo-box">
-            <p class="whaddowedo-text">Дизайнерские решения</p>
+        <div class="whaddowedo-list__box">
+            <p class="whaddowedo-list__text">Дизайнерские решения</p>
         </div>
     </li>
    </ul>
@@ -247,17 +271,17 @@
     <div class="container">
         <h2 class="title-two">Постоянные клиенты</h2>
     <ul class="list clients-list">
-        <li class="clients-item"><a class="clients-link" href="#"><svg class="clients-icon">
+        <li class="clients-list__item"><a class="clients-list__link" href="#"><svg class="clients-list__icon">
             <use href="./images/icons.svg#icon-logosquare"></use></svg></a></li>
-        <li class="clients-item"><a class="clients-link" href="#"><svg class="clients-icon">
+        <li class="clients-list__item"><a class="clients-list__link" href="#"><svg class="clients-list__icon">
             <use href="./images/icons.svg#icon-logobook"></use></svg></a></li>
-        <li class="clients-item"><a class="clients-link" href="#"><svg class="clients-icon">
+        <li class="clients-list__item"><a class="clients-list__link" href="#"><svg class="clients-list__icon">
             <use href="./images/icons.svg#icon-logooval"></use></svg></a></li>
-        <li class="clients-item"><a class="clients-link" href="#"><svg class="clients-icon">
+        <li class="clients-list__item"><a class="clients-list__link" href="#"><svg class="clients-list__icon">
             <use href="./images/icons.svg#icon-logofoster"></use></svg></a></li>
-        <li class="clients-item"><a class="clients-link" href="#"><svg class="clients-icon">
+        <li class="clients-list__item"><a class="clients-list__link" href="#"><svg class="clients-list__icon">
             <use href="./images/icons.svg#icon-logobrand"></use></svg></a></li>
-        <li class="clients-item"><a class="clients-link" href="#"><svg class="clients-icon">
+        <li class="clients-list__item"><a class="clients-list__link" href="#"><svg class="clients-list__icon">
             <use href="./images/icons.svg#icon-logocomp"></use></svg></a></li>
     </ul>
     </div>
@@ -265,19 +289,19 @@
 
 </main>
 <footer class="footer">
-    <div class="container footer-container">
+    <div class="container footer__container">
         <div class="footer-contacts">
             <a class="link footer-logo" href="http://WebStudio">Web<span class="logo-third-color">Studio</span> </a>
                 <address>
-                    <ul class="list footer-list">
-                        <li class="footer-contact">
-                            <a class="link footer-address" href="https://goo.gl/maps/e6FK5a6FQXhLv9fTA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                    <ul class="list footer-contacts">
+                        <li class="footer-contacts__item">
+                            <a class="link footer-contacts__link" href="https://goo.gl/maps/e6FK5a6FQXhLv9fTA" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="footer-contact">
-                            <a class="link footer-address" href="mailto:info@example.com">info@devstudio.com</a> 
+                        <li class="footer-contacts__item">
+                            <a class="link footer-contacts__link" href="mailto:info@example.com">info@devstudio.com</a> 
                         </li>
-                        <li class="footer-contact">
-                            <a class="link footer-address" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="footer-contacts__item">
+                            <a class="link footer-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -320,14 +344,14 @@
 </div>
 <div class="footer-subscribe">
 <h4 class="title-five">Подпишитесь на рассылку</h4>
-<div class="subscribe-wrap">
+<div class="footer-subscribe__wrap">
     <form action="#" class="subscribe">
         <input type="text" 
-        class="subscribe-input" 
+        class="footer-subscribe__input" 
         name="email" 
         placeholder="E-mail">
     </form>
-    <button type="submit" class="btn subscribe-btn">Подписаться <svg class="subscribe-btn-icon" width = "24" height = "24">
+    <button type="submit" class="btn footer-subscribe__btn">Подписаться <svg class="footer-subscribe__btn--icon" width = "24" height = "24">
         <use href="./images/icons.svg#icon-send"></use>
     </svg></button>
 </div>
@@ -336,51 +360,71 @@
 </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-    <button type="button" class="modal-close" data-modal-close>
-    <svg class="modal-close-icon" width="11" height="11"> <use href="./images/icons.svg#icon-close"></use>
+        <button type="button" class="modal__close-btn" data-modal-close>
+            <svg class="modal__close-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-close">
             </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="#" class="modal-form">
-            <div class="modal-field">
-            <label class="modal-label-text">Имя </label>
-            <div class="input-wrap">
-            <input type="text" name="user-name" id="" class="modal-form-input" >
-            <svg class="input-icon" width = "12" height = "12">
-                <use href="./images/icons.svg#icon-head"></use></svg></div>
-        </div>
-        <div class="modal-field">
-            <label class="modal-label-text">Телефон </label><div class="input-wrap">
-            <input type="text" name="user-tel" id="" class="modal-form-input"><svg class="input-icon" width = "13" height = "13">
-                <use href="./images/icons.svg#icon-truba"></use></svg></div>
-        </div>
-        <div class="modal-field">   
-            <label class="modal-label-text">
-                Почта </label><div class="input-wrap">
-            <input type="text" name="user-email" id="" class="modal-form-input"><svg class="input-icon" width = "15" height = "12">
-                <use href="./images/icons.svg#icon-email-black"></use></svg>
-        </div> </div>
-        <div class="modal-field"> 
-        <label class="modal-label-text">
-                Комментарий </label>
-            <textarea name="user-comment"
-            id="user-comment"
-            class="modal-form-comment"
-            placeholder="Введите текст"></textarea> 
-        </div>
-
-        <div class="modal-field">   
-         <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden">
-        
-<label for="policy" class="policy-text"><span class="policy-item">
-    <svg class="check-icon" width = "11" height = "8">
-        <use href="./images/icons.svg#icon-check"></use></svg>
-</span> Соглашаюсь с рассылкой и принимаю <a href="#" class="link policy-link"> Условия договора</a></label></div>
-
-            <button type="submit" class="btn main-btn modal-btn">Отправить</button>
-
-
-        </form>
+        <p class="modal-form__title">Оставьте свои данные, мы вам перезвоним</p>
+<form action="#" class="modal-form">
+<div class="modal-form__text-field">
+<label for="user-name" class="modal-form__label">Имя</label>
+<div class="modal-form__input-wrap">
+<input 
+class="modal-form__input" 
+type="text"
+name="user-name"
+id="user-name">
+<svg class="modal-form__icon" width="12" height="12">
+    <use href="./images/icons.svg#icon-head"></use>
+</svg>
+</div>
+</div>
+<div class="modal-form__text-field">
+<label for="user-tel" class="modal-form__label">Телефон</label>
+<div class="modal-form__input-wrap">
+<input 
+class="modal-form__input" 
+type="tel"
+name="user-tel" 
+id="user-tel">
+<svg class="modal-form__icon" width="12" height="12">
+    <use href="./images/icons.svg#icon-truba"></use>
+</svg>
+</div>
+</div>
+<div class="modal-form__text-field">
+<label for="user-mail" class="modal-form__label">Почта</label>
+<div class="modal-form__input-wrap">
+<input 
+class="modal-form__input" 
+type="email" 
+name="user-mail" 
+id="user-mail">
+<svg class="modal-form__icon" width="12" height="12">
+    <use href="./images/icons.svg#icon-email-black"></use>
+</svg>
+</div>
+</div>
+<div class="modal-form__text-field">
+<label for="comment" class="modal-form__label">Комментарий</label>
+<textarea class="modal-form__textarea"
+name="comment" 
+id="comment" 
+placeholder="Введите текст"></textarea>
+</div>
+<div class="modal-form__text-field modal-form__policy-wrap">
+<input type="checkbox"
+name="policy"
+id="policy"
+class="modal-form__checkbox visually-hidden"
+>
+<label for="policy" class="modal-form__check-text"> <span class="modal-form__check-item"> <svg class="modal-form__check-icon" width="11" height="8">
+    <use href="./images/icons.svg#icon-check"></use>
+</svg> </span> Соглашаюсь с рассылкой и принимаю &nbsp<a class="modal-form__policy-link " href="#"> Условия договора</a></label>
+</div>
+<button type="submit" class="btn modal-form__submit-btn">Отправить</button>
+</form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
