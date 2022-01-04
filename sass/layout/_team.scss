@@ -21,7 +21,7 @@
 }
 
 .team-card {
-  text-align: center;
+  
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #fff;
@@ -38,6 +38,7 @@ img {
 }
 
 .team-list__text {
+  text-align: center;
   @include font(16px, 400, 1.18, 00.03em);
   margin-top: 10px;
   color: var(--main-text-color);
