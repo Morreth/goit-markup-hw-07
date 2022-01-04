@@ -509,7 +509,7 @@ body {
   border-color: var(--accent-color);
 }
 
-.clients-list__link:hover .clients-icon, .clients-list__link:focus .clients-icon {
+.clients-list__link:hover .clients-list__icon, .clients-list__link:focus .clients-list__icon {
   fill: var(--accent-color);
 }
 

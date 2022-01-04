@@ -3,10 +3,12 @@
   justify-content: space-between;
 }
 
+
+
 .clients-list__link {
-  @extend %align-list;
   width: 170px;
   height: 92px;
+  @extend %align-list;
   @extend %content-center;
   box-sizing: border-box;
   border: 1px solid #afb1b8;
@@ -15,7 +17,7 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
-    .clients-icon {
+    .clients-list__icon {
       fill: var(--accent-color);
     }
   }
@@ -28,5 +30,6 @@
     margin-left: auto;
     margin-right: auto;
     @extend %transit;
+   
   }
 }
