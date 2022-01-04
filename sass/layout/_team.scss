@@ -37,7 +37,7 @@ img {
   color: var(--second-title-color);
 }
 
-.team-text {
+.team-list__text {
   @include font(16px, 400, 1.18, 00.03em);
   margin-top: 10px;
   color: var(--main-text-color);
