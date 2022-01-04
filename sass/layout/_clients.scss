@@ -3,8 +3,6 @@
   justify-content: space-between;
 }
 
-
-
 .clients-list__link {
   width: 170px;
   height: 92px;
@@ -30,6 +28,5 @@
     margin-left: auto;
     margin-right: auto;
     @extend %transit;
-   
   }
 }
