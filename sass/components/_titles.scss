@@ -1,0 +1,4 @@
+.title-four {
+    @include font(16px, 500, 1.18, 00.03em);
+    color: var(--second-title-color);
+  }
